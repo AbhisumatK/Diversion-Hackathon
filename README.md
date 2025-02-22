@@ -24,6 +24,34 @@
         </h3>
         <h1>Seperating numericals and categorical values :</h1>
         <img src="sep nem and cat val.jpg" alt="image of the code for the same">
+        <p>The python code shown in the above image has the following functionality:</p>
+        <ul>
+            <li>
+            <strong>Read and Preview Data</strong>: Reads the uploaded CSV file into a 
+            Pandas DataFrame (<span class="highlight">df</span>) and displays its 
+            first few rows in Streamlit.
+            </li>
+            <li>
+            <strong>Feature Separation</strong>:
+            <ul>
+                <li>
+                <span class="highlight">num_features</span> identifies columns that 
+                contain numerical data (using 
+                <span class="highlight">include=[np.number]</span>).
+                </li>
+                <li>
+                <span class="highlight">cat_features</span> identifies columns that 
+                contain non-numerical (categorical) data (using 
+                <span class="highlight">exclude=[np.number]</span>).
+                </li>
+            </ul>
+            </li>
+            <li>
+            <strong>Display Column Analysis</strong>: Prints out the numerical and 
+            categorical features using Streamlit’s 
+            <span class="highlight">st.write()</span>.
+            </li>
+        </ul>
 </body>
 
 </html>
