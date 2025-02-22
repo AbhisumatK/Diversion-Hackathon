@@ -8,7 +8,7 @@
     </head>
     <body>
         <h1>Importing necessary models :</h1>
-        <img src="c:\Users\OLINA\Downloads\models.jpg" alt="models required for Ez-Viz">
+        <img src="models.jpg" alt="models required for Ez-Viz">
 </body>
 
 </html>
