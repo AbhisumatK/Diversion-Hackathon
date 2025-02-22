@@ -38,22 +38,24 @@ if uploaded_file:
         label_encoders[col] = le
     
     # Step 3: Correlation Matrix
-    if st.checkbox("Show Correlation Matrix"):
-        st.write("#### Correlation Matrix")
-        corr_matrix = df.corr()
-        fig, ax = plt.subplots(figsize=(10, 6))
-        sns.heatmap(corr_matrix, annot=True, fmt=".2f", cmap="coolwarm", ax=ax)
-        st.pyplot(fig)
-        
-        # Automatically select features with high correlation to the target
-        target_corr = corr_matrix.abs().iloc[:, -1].sort_values(ascending=False)
-        recommended_features = target_corr[target_corr > 0.1].index.tolist()
-        if len(recommended_features) > 1 and target_corr.index[-1] in recommended_features:
-            recommended_features.remove(target_corr.index[-1])  # Remove the target itself if present
-        else:
-            recommended_features = []  # Drop features with near-zero correlation
+    st.write("### Correlation Matrix")
+    corr_matrix = df[num_features].corr()
+    fig, ax = plt.subplots()
+    sns.heatmap(corr_matrix, annot=True, cmap="coolwarm", ax=ax)
+    st.pyplot(fig)
+    
+    # Selecting target variable
+    target_column = st.selectbox("Select Target Column", df.columns)
+    
+    # Dropping columns with near-zero correlation
+    if target_column in num_features:
+        target_corr = corr_matrix[target_column].abs()
+        selected_features = target_corr[target_corr > 0.1].index.tolist()
     else:
-        recommended_features = numerical_cols
+        selected_features = num_features  # Use all numerical features for classification
+    
+    if target_column in selected_features:
+        selected_features.remove(target_column)
     
     # Step 4: Feature Selection
     st.sidebar.header("Feature Selection")
