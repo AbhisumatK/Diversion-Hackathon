@@ -12,11 +12,14 @@
         <img src="models.jpg" alt="models required for Ez-Viz">
         <h3>
             <ul>
-                <li><i>Ensemble Models</i>: RandomForestClassifier, GradientBoostingClassifier, and AdaBoostClassifier are used for robust classification by combining multiple weak models.</li>
-                <li><i>Linear Models</i>: LinearRegression (for regression tasks) and LogisticRegression (for binary/multi-class classification).</li>
-                <li><i>Tree-Based & SVM Models</i>: DecisionTreeClassifier (decision tree classification) and SVC (Support Vector Classification).</li>
-                <li><i>K-Nearest Neighbors</i>: KNeighborsClassifier for instance-based learning.<li>
-                <li><i>Preprocessing & Metrics</i>: StandardScaler (feature scaling), LabelEncoder (categorical encoding), r2_score (regression performance), and accuracy_score (classification accuracy).</li>
+                <li>RandomForestClassifier: An ensemble learning method using multiple decision trees to improve accuracy and reduce overfitting. Ideal for classification tasks.</li>
+                <li>GradientBoostingClassifier: Another ensemble technique that builds models sequentially, optimizing errors from previous models. Suitable for complex datasets.</li>
+                <li>AdaBoostClassifier: An adaptive boosting method that combines weak classifiers iteratively to form a strong classifier. Effective for reducing bias and variance.</li>
+                <li>LinearRegression: A basic model for predicting continuous values by fitting a linear relationship between features and targets.</li>
+                <li>LogisticRegression: A statistical model for binary or multi-class classification problems using a sigmoid function for prediction.<li>
+                <li>DecisionTreeClassifier: A tree-based model that splits data into branches based on feature conditions for classification.</li>
+                <li>SVC (Support Vector Classifier): A model that finds the optimal hyperplane to separate data into classes, effective for high-dimensional spaces.</li>
+                <li>KNeighborsClassifier: A simple algorithm that classifies a sample based on the majority class among its 'k' nearest neighbors.</li>
             </ul>
         </h3>
 </body>
