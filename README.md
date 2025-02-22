@@ -23,7 +23,7 @@
             </ul>
         </h3>
         <h1>Seperating numericals and categorical values :</h1>
-        <img src="sep nem and cat val" alt="image of the code for the same">
+        <img src="sep nem and cat val.jpg" alt="image of the code for the same">
 </body>
 
 </html>
