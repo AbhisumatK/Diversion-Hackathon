@@ -1,0 +1,1 @@
+{"duration": 0.00413060188293457, "input_args": {"s": "0      yes\n1       no\n2      yes\n3      yes\n4       no\n      ... \n540     no\n541     no\n542     no\n543     no\n544     no\nName: prefarea, Length: 545, dtype: object"}, "time": 1740239741.1879187}

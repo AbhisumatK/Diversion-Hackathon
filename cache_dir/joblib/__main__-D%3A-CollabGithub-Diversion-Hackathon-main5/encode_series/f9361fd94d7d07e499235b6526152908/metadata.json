@@ -1,0 +1,1 @@
+{"duration": 0.003515005111694336, "input_args": {"s": "0      1\n1      0\n2      1\n3      0\n4      1\n      ..\n763    0\n764    0\n765    0\n766    1\n767    0\nName: Outcome, Length: 768, dtype: int64"}, "time": 1740239994.9851232}

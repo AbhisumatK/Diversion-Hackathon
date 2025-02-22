@@ -1,0 +1,1 @@
+{"duration": 0.0035054683685302734, "input_args": {"s": "0        0\n1        0\n2        0\n3       94\n4      168\n      ... \n763    180\n764      0\n765    112\n766      0\n767      0\nName: Insulin, Length: 768, dtype: int64"}, "time": 1740239994.9434187}

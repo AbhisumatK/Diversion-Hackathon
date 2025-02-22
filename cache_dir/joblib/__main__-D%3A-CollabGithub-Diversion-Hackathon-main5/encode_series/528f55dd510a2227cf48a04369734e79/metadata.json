@@ -1,0 +1,1 @@
+{"duration": 0.003224611282348633, "input_args": {"s": "0       6\n1       1\n2       8\n3       1\n4       0\n       ..\n763    10\n764     2\n765     5\n766     1\n767     1\nName: Pregnancies, Length: 768, dtype: int64"}, "time": 1740239994.904774}

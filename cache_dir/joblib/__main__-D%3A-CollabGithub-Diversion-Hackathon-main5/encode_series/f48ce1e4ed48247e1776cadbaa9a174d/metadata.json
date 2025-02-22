@@ -1,0 +1,1 @@
+{"duration": 0.002000093460083008, "input_args": {"s": "0      4\n1      4\n2      3\n3      4\n4      4\n      ..\n540    2\n541    3\n542    2\n543    3\n544    3\nName: bedrooms, Length: 545, dtype: int64"}, "time": 1740239741.0990481}

@@ -1,0 +1,1 @@
+{"duration": 0.0035140514373779297, "input_args": {"s": "0      0.627\n1      0.351\n2      0.672\n3      0.167\n4      2.288\n       ...  \n763    0.171\n764    0.340\n765    0.245\n766    0.349\n767    0.315\nName: DiabetesPedigreeFunction, Length: 768, dtype: float64"}, "time": 1740239994.966073}
