@@ -90,6 +90,20 @@ if uploaded_file:
         else:
             score = accuracy_score(y_test, y_pred) * 100
             st.write(f"### Model Accuracy: {score:.2f}%")
+
+    st.write("### Make a Prediction")
+    user_input = {}
+    for feature in selected_features:
+        min_val = float(df[feature].min())
+        max_val = float(df[feature].max())
+        default_val = float(df[feature].median())
+        user_input[feature] = st.number_input(f"Enter {feature}", min_value=min_val, max_value=max_val, value=default_val)
+            
+    if st.button("Predict"):
+        input_df = pd.DataFrame([user_input])
+        input_df = pd.DataFrame(scaler.transform(input_df), columns=selected_features)
+        prediction = model.predict(input_df)
+        st.write(f"### Prediction: {prediction[0]}")
     
     # Visualization Options
     with st.sidebar:
