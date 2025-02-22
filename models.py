@@ -6,17 +6,17 @@ from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 
-def select_model(type: int):
-    match type:
-        case 1:
-            return LogisticRegression()
-        case 2:
-            return LinearRegression()
-        case 3:
-            return RandomForestClassifier()
-        case 4:
-            return GradientBoostingClassifier()
-        case 5:
-            return SVC()
-        case 6:
-            return KNeighborsClassifier()
+def select_model(type: str):
+    if type == "Logistic Regression":
+        model = LogisticRegression()
+    if type == "Linear Regression":
+        model = LinearRegression()
+    if type == "Random Forest":
+        model = RandomForestClassifier()
+    if type == "Gradient Boosting":
+        model = GradientBoostingClassifier()
+    if type == "SVC":
+        model = SVC()
+    if type == "KNN":
+        model = KNeighborsClassifier()
+    return model

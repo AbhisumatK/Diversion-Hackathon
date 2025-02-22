@@ -63,3 +63,9 @@ if uploaded_file is not None:
     X = scaler.fit_transform(X)
     
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+    model_choice = st.selectbox("Choose Model", ["Logistic Regression", "Linear Regression", "Random Forest", "Gradient Boosting", "SVM", "KNN"])
+
+    if st.button("Train Model"):
+        model = models.select_model(model_choice)
+        
