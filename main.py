@@ -7,15 +7,9 @@ import streamlit as st
 
 # SKLearn initialiation
 from sklearn.model_selection import train_test_split
-
-# Models
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier
-from sklearn.linear_model import LinearRegression, LogisticRegression
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.svm import SVC
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.metrics import r2_score, accuracy_score
+from sklearn.preprocessing import StandardScaler, LabelEncoder
+import models
 
 uploaded_file = st.file_uploader("Upload a CSV File", type=[ "csv", "tsv", "xlsx", "json", "parquet", "pkl", "h5", "xml" ])
 if uploaded_file is not None:
@@ -69,5 +63,3 @@ if uploaded_file is not None:
     X = scaler.fit_transform(X)
     
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-    
