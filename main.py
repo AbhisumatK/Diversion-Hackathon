@@ -8,6 +8,7 @@ import streamlit as st
 # SKLearn initialiation
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score, accuracy_score
+from sklearn.preprocessing import StandardScaler, LabelEncoder
 import models
 
 uploaded_file = st.file_uploader("Upload a CSV File", type=[ "csv", "tsv", "xlsx", "json", "parquet", "pkl", "h5", "xml" ])
@@ -20,9 +21,6 @@ if uploaded_file is not None:
     num_features = df.select_dtypes(include=[np.number]).columns.tolist()
     cat_features = df.select_dtypes(exclude=[np.number]).columns.tolist()
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     st.write("### Column Analysis")
     st.write("**Numerical Features:**", num_features)
     st.write("**Categorical Features:**", cat_features)
@@ -65,11 +63,3 @@ if uploaded_file is not None:
     X = scaler.fit_transform(X)
     
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-    
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
