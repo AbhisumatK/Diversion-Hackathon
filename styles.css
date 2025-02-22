@@ -5,8 +5,9 @@ body {
   }
 
 .highlight{
-    background-color: #ffff00;
+    background-color: #ffff99; /* a light yellow for better contrast */
       padding: 2px 5px;
+      border: 1px solid #cccc00; /* adds a border to further distinguish the text */
       border-radius: 4px;
       font-family: Consolas, monospace;
     }
