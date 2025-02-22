@@ -1,0 +1,1 @@
+{"duration": 0.006441354751586914, "input_args": {"s": "0      yes\n1      yes\n2      yes\n3      yes\n4      yes\n      ... \n540    yes\n541     no\n542    yes\n543     no\n544    yes\nName: mainroad, Length: 545, dtype: object"}, "time": 1740245848.7248273}

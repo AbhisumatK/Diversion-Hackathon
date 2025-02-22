@@ -1,0 +1,1 @@
+{"duration": 0.005509614944458008, "input_args": {"s": "0       no\n1       no\n2      yes\n3      yes\n4      yes\n      ... \n540    yes\n541     no\n542     no\n543     no\n544     no\nName: basement, Length: 545, dtype: object"}, "time": 1740245848.7536733}

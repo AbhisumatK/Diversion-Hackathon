@@ -1,0 +1,1 @@
+{"duration": 0.004557609558105469, "input_args": {"s": "0      yes\n1      yes\n2       no\n3      yes\n4      yes\n      ... \n540     no\n541     no\n542     no\n543     no\n544     no\nName: airconditioning, Length: 545, dtype: object"}, "time": 1740245848.7809618}
