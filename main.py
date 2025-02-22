@@ -129,7 +129,7 @@ if uploaded_file:
                 prediction = model.predict(input_df)
                 st.write(f"### Prediction: {prediction[0]}")
             
-            # Step 8: Visualizations
+            #Step 8: Visualizations
             st.write("### Data Visualizations")
             if st.checkbox("Show Feature Distributions"):
                 st.write("#### Distribution of Features")
