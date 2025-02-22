@@ -21,6 +21,7 @@ if uploaded_file is not None:
     cat_features = df.select_dtypes(exclude=[np.number]).columns.tolist()
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     st.write("### Column Analysis")
     st.write("**Numerical Features:**", num_features)
     st.write("**Categorical Features:**", cat_features)
@@ -65,5 +66,7 @@ if uploaded_file is not None:
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
     
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
