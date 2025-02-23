@@ -2,29 +2,29 @@
 This project is a web-based tool built with Streamlit that allows users to visualize and predict outcomes from their datasets. It supports loading data from a CSV file or a URL, cleans the data, provides a range of visualization options, and trains an optimized machine learning model (either classification or regression). The tool includes dynamic input for predictions and allows users to export the trained model in their preferred format.
 
 # Features
-Dataset Loading
-
-Load datasets by uploading a CSV file.
+1. Load datasets by uploading a CSV file.
 Alternatively, extract the dataset from a URL.
 Data Cleaning & Analysis
 
-Automatic duplicate removal and missing value imputation (median for numeric, mode for categorical).
+2. Automatic duplicate removal and missing value imputation (median for numeric, mode for categorical).
 Provides column analysis and summary statistics.
 Data Visualization
 
-Multiple chart types including Bar, Line, Scatter, Histogram, Box, Violin, and Pie charts.
+3. Multiple chart types including Bar, Line, Scatter, Histogram, Box, Violin, and Pie charts.
 Customizable visualization parameters (e.g., selecting axes, legend positions).
 Dynamic Prediction Model
 
-Automatically selects a classification or regression model based on the target variable.
+4. Automatically selects a classification or regression model based on the target variable.
 Uses a stacking ensemble with optimized preprocessing (scaling for numeric and one-hot encoding for categorical features).
 Hyperparameter tuning via GridSearchCV.
-Retrains the model if the dataset or target variable changes.
-Provides dynamic input where:
-For all-categorical predictors: input for every feature.
-Otherwise: modification of one feature at a time (with immediate state update via callbacks).
-Prediction Output
 
+6. Retrains the model if the dataset or target variable changes.
+
+Provides dynamic input where:
+a. For all-categorical predictors: input for every feature.
+b. Otherwise: modification of one feature at a time (with immediate state update via callbacks).
+
+# Prediction Output
 For classification problems, the model outputs the predicted class along with a confidence score. Numeric predictions are mapped back to the original string labels.
 For regression, the numeric prediction (with R² score) is displayed.
 Model Export
@@ -43,16 +43,9 @@ Running the Application
 To run the application on local machine, navigate to the project directory in your terminal and run:
 `streamlit run Ez-Viz.py`
 
-Site hosted on: https://ez-viz.streamlit.app
+### Site hosted on: https://ez-viz.streamlit.app
 
-# Usage
-Load Your Dataset
-Use the sidebar to either upload a CSV file or enter a URL to load your dataset.
-
-Data Cleaning & Visualization
-The app automatically cleans the data and displays summary statistics. You can also choose various visualization options.
-
-Prediction Model
+# Prediction Model
 
 Select (or override) the target variable from your dataset.
 The model is trained (or retrained) automatically based on the chosen target.
