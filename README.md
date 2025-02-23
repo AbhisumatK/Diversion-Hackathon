@@ -30,17 +30,20 @@ For regression, the numeric prediction (with R² score) is displayed.
 Model Export
 
 Export the trained model from the sidebar in either pickle or joblib format.
-Installation
+
+# Installation
 Prerequisites
 Python 3.7 or higher
 
 Required Libraries
 Install the required Python libraries using pip:
-`pip install streamlit pandas numpy plotly scikit-learn joblib`
+`pip install -r requirements.txt`
 
 Running the Application
-To run the application, navigate to the project directory in your terminal and run:
-`streamlit run ez-viz.py`
+To run the application on local machine, navigate to the project directory in your terminal and run:
+`streamlit run Ez-Viz.py`
+
+Site hosted on: https://ez-viz.streamlit.app
 
 # Usage
 Load Your Dataset
