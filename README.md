@@ -70,7 +70,10 @@ If there are errors loading data from a URL, ensure the URL points to a valid CS
 # Contributing
 Contributions are welcome! Feel free to fork this repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
 
+ <span style="color: red;">Limitations: This tool does not support string predicrions yet</span>
+
 # License
 This project is licensed under the MIT License.
 
 ~ made by Team: Schrödinger's Cat
+
