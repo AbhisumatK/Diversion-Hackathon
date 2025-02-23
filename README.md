@@ -68,13 +68,10 @@ A negative R² indicates that the model performs worse than a baseline predictio
 Data URL Issues:
 If there are errors loading data from a URL, ensure the URL points to a valid CSV file. The app uses the Python engine with on_bad_lines='skip' to mitigate tokenizing errors.
 
-Contributing
+# Contributing
 Contributions are welcome! Feel free to fork this repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
 
-License
+# License
 This project is licensed under the MIT License.
 
-For questions or suggestions, feel free to reach out:
-
-- Team Name: Schrödinger's Cat
-- GitHub: [your-username](https://github.com/your-username)
+~ made by Team: Schrödinger's Cat
