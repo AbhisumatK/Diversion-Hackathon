@@ -1,4 +1,4 @@
-### Ez-Viz: ML Visualization & Prediction Tool
+# Ez-Viz: ML Visualization & Prediction Tool
 This project is a web-based tool built with Streamlit that allows users to visualize and predict outcomes from their datasets. It supports loading data from a CSV file or a URL, cleans the data, provides a range of visualization options, and trains an optimized machine learning model (either classification or regression). The tool includes dynamic input for predictions and allows users to export the trained model in their preferred format.
 
 # Features
@@ -43,7 +43,7 @@ Running the Application
 To run the application on local machine, navigate to the project directory in your terminal and run:
 `streamlit run Ez-Viz.py`
 
-### Site hosted on: https://ez-viz.streamlit.app
+# Site hosted on: https://ez-viz.streamlit.app
 
 # Prediction Model
 
