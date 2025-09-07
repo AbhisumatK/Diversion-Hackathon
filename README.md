@@ -16,7 +16,7 @@ This project is a web-based tool built with Streamlit that allows users to visua
 - Choose from multiple chart types: Bar, Line, Scatter, Histogram, Box, Violin, and Pie.
 - Customize visualization parameters (e.g., axis selection, legend positioning).
 
-✅ **Dynamic Machine Learning Model**
+✅ **Dynamic Machine Learning Model** 
 - Automatically detects and applies classification or regression.
 - Uses advanced techniques like stacking ensemble and GridSearchCV for optimization.
 - Retrains the model when dataset or target variable changes.
