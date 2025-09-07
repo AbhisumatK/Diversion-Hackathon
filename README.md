@@ -31,7 +31,7 @@ This project is a web-based tool built with Streamlit that allows users to visua
 
 # Prediction Output
 For classification problems, the model outputs the predicted class along with a confidence score. Numeric predictions are mapped back to the original string labels.
-For regression, the numeric prediction (with R² score) is displayed.
+For regression, the numeric prediction (with R² score) is displayed. 
 
 # Installation
 ### Prerequisites
