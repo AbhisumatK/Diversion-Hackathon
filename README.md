@@ -11,26 +11,35 @@ This project is a web-based tool built with Streamlit that allows users to visua
 ✅ **Data Visualization**
 - Choose from multiple chart types: Bar, Line, Scatter, Histogram, Box, Violin, and Pie.
 - Customize visualization parameters (e.g., axis selection, legend positioning).
-✅ **Dynamic Machine Learning Model** 
+✅ **Dynamic Machine Learning Model**
 - Automatically detects and applies classification or regression.
 - Uses advanced techniques like stacking ensemble and GridSearchCV for optimization.
 - Retrains the model when dataset or target variable changes.
 ✅ **Interactive Prediction**
 - Provides dynamic input forms:
-   - For categorical features: input for each feature.
-   - For mixed data: modify one feature at a time.
+  - For categorical features: input for each feature.
+  - For mixed data: modify one feature at a time.
 ✅ **Export Trained Model**
-- Download the trained model in either **pickle** or **joblib** format.
+- Download the trained model in either pickle or joblib format.
+
 # Prediction Output
-For classification problems, the model outputs the predicted class along with a confidence score. Numeric predictions are mapped back to the original string labels.
-For regression, the numeric prediction (with R² score) is displayed. 
+For classification problems, the model outputs the predicted class along with a confidence score. Numeric predictions are mapped back to the original string labels. For regression, the numeric prediction (with R² score) is displayed.
+
 # Installation
+
 ### Prerequisites
 Python 3.7 or higher
+
 ### Required Libraries
 Install the required Python libraries using pip:
-`pip install -r requirements.txt`
+```
+pip install -r requirements.txt
+```
+
 ### Running the Application
 To run the application on local machine, navigate to the project directory in your terminal and run:
-`streamlit run Ez-Viz.py`
+```
+streamlit run Ez-Viz.py
+```
+
 # Site hosted on: https://ez-viz.streamlit.app 
